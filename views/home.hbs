@@ -1,0 +1,57 @@
+<div class="body-cont">
+    <div class="sidebar">
+        <div class="row">
+            <div class="image-">
+                <img class="imglog" src="media/guardlogos.png" alt="">
+            </div>
+        </div>
+        <div class="row" style="margin-right: 0;">
+            <div class="ul-content">
+                <ul>
+                    <li class="side_li1 active"><a href="/home">Delete Accounts</a></li>
+                    {{!-- <li class="side_li2"><a href="/resetaccount">Reset Accounts</a></li> --}}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <header class="header">
+            <h1>Delete Account</h1>
+            <div class="tabs">
+                <a href="" class="active">Single</a>
+                <a href="">Multiple</a>
+            </div>
+        </header>
+        <div class="single_main  active_display" id="single_main">
+            <h4>Delete single account</h4>
+            <p>Delete an account by entering the Anumber or Gnumber</p>
+            <div class="row pt-2">
+                <div class="col-lg-5">
+                    <div class="form-group">
+                        {{!-- <label for="exampleInputEmail1">Email address</label> --}}
+                        <input type="email" class="form-control" id="single_value" aria-describedby="emailHelp"
+                            placeholder="Enter Anumber">
+                    </div>
+                    <button id="single_button" class="sinlge_b">Delete Account</button>
+                </div>
+            </div>
+        </div>
+        <div class="multi_main" id="multi_main">
+            <div class="row pt-2">
+                <div class="col-lg-5">
+                    <h4>Delete multiple account</h4>
+                    <p>Delete multiple accounts by entering an excel sheet with the right format</p>
+                    <div class="m-content">
+                        <input type="file" id="excelwninput">
+                        <p id="Emessage">File has been uploaded succesful!</p>
+                        <button id="multi_button" disabled>Delete Accounts</button>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="excel_example">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+<div class="body-cont">
+    <div class="sidebar">
+        <div class="row">
+            <div class="image-">
+                <img class="imglog" src="media/guardlogos.png" alt="">
+            </div>
+        </div>
+        <div class="row" style="margin-right: 0;">
+            <div class="ul-content">
+                <ul>
+                    <li class="side_li1"><a href="/">Delete Accounts</a></li>
+                    {{!-- <li class="side_li2 active disabled"><a href="/resetaccount">Reset Accounts</a></li> --}}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <header class="header">
+            <h1>Reset Account</h1>
+            <div class="retab tabs">
+                <a href="" class="active">WN</a>
+                <a href="">WG</a>
+            </div>
+        </header>
+        <div class="single_main  active_display" id="single_main">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h4>Reset WN account</h4>
+                    <p>Upload an excel file with the wn anumber and there information, with sheet name WN_MBR</p>
+                    <div class="row pt-2">
+                        <div class="col-lg-5">
+                            <div class="m-content">
+                                <input type="file" id="excelwnres">
+                                <p id="Emessage">File has been uploaded succesful!</p>
+                                <button id="resetwn_button" class="sinlge_b" disabled>Reset Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="excel_examp"></div>
+                </div>
+            </div>
+        </div>
+        <div class="multi_main " id="multi_main">
+            <div class="row pt-2">
+                <div class="col-lg-5">
+                    <h4>Reset WG account</h4>
+                    <p>Upload an excel file with the wg nameID and there information, with sheet name WG_MBR</p>
+                    <div class="m-content">
+                        <input type="file" id="excelwgres">
+                        <p id="Emessage">File has been uploaded succesful!</p>
+                        <button id="rest_multi_button" disabled>Reset Accounts</button>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="wg_excel">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
